@@ -33,9 +33,13 @@ mongoose
 
 
   const userRoutes = require('./routes/userRoutes');
+  const habitRoutes = require('./routes/habitRoutes');
+
   const path = require('path');
 
-  app.use('/api/users', userRoutes)
+  app.use('/api/users', userRoutes);
+  app.use('/api/habit', habitRoutes);
+  
   
 
 

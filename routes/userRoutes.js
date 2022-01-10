@@ -9,7 +9,7 @@ router.post("/signup", controller.signupUser);
 router.post("/signin", controller.signinUser);
 
 router.get("/logout", controller.logout);
-router.use(passport.authenticate("jwt", {session: false}));
+//router.use(passport.authenticate("jwt", {session: false}));
 
 
 module.exports = router;
